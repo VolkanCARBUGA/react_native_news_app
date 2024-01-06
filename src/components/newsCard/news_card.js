@@ -8,7 +8,7 @@ const NewsCard=({news})=>{
 
 <Text style={style.title}>{news.title}</Text>
 <Text style={style.description}>{news.description}</Text>
-<Image style={style.image} source={{uri:news.imageUrl}} ></Image>
+<Image style={style.image} source={require(news.imageUrl)} ></Image>
         </View>
     );
 }
